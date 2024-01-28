@@ -69,7 +69,12 @@ The U-Net + SE-Resnet34 performs slightly better for the Positive Predictive Val
 Three different loss functions are tested for the U-Net + SE-Resnet34 model.
 The IoU, surface loss, and a balanced combination are compared.
 Surface loss is a specialized loss function used in semantic segmentation tasks that emphasizes correctly predicting the boundaries between different regions in an image.
-The balanced loss
+The balanced loss dynamically adjusts both losses.
+During each training step, the model calculates the two loss functions.
+Softmax is deployed to get balancing factors between 0. and 1.
+Thereby, both losses are multiplied by 0.1. 
+The balancing factors are then multiplied by the losses.
+
 
 ![Metric_Validation_Loss](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/7435e002-a145-4617-976e-c30aaaed637d)
 Figure 2: Performance comparison on validation dataset of different loss functions for U-Net with SE-Resnet34.
