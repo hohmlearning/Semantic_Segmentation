@@ -66,10 +66,21 @@ The best result is obtained for U-Net + Resnet34 and U-Net + SE-Resnet34.
 The U-Net + SE-Resnet34 performs slightly better for the Positive Predictive Value (PPV).
 
 ## Performance comparing for different loss function
+Three different loss functions are tested for the U-Net + SE-Resnet34 model.
+The IoU, surface loss, and a balanced combination are compared.
+Surface loss is a specialized loss function used in semantic segmentation tasks that emphasizes correctly predicting the boundaries between different regions in an image.
+The balanced loss
 
-
-![Metric_Validation_Loss](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/96cac098-3f44-4d09-b40c-cdd9384ece0d)
+![Metric_Validation_Loss](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/7435e002-a145-4617-976e-c30aaaed637d)
 Figure 2: Performance comparison on validation dataset of different loss functions for U-Net with SE-Resnet34.
+
+The performance of the three losses differs only slightly. 
+The NPV is constant at a high value.
+The surface performs slightly worse for IoU and PPV, compared to IoU.
+The IoU for the balanced loss is higher.
+However, the PPV is slightly lower.
+Overall, the more complicated balanced surface loss does not outperform the simple IoU.
+
 
 ## Performance on test dataset
 
