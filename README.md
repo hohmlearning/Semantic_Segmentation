@@ -28,7 +28,7 @@ For further improvement of the original U-Net [[6](#references)], the encoder pa
 Squeeze and excitation blocks are introduced further to improve the Convolution Neural Networks (CNN) [[14](#references)].
 In particular, a SE-Resnet34 is deployed as an encoder.
 
-##Data characterization
+## Data characterization
 The total amount of data consists of 72 annotated images. After the convergence of the network, the performance is tested on 5 reserved images. The residual 67 images are used for training and validation. The data is imagewise independent. In addition, an identical distribution of the information overall images was assumed. Therefore, a split is performed for training and validation, categorizing 70% and 30% of the 67 images for training and validation, respectively. 
 
 In addition to the limited amount of data, the data is negatively imbalanced. Particularly, about 4.3% of the training and validation data pixels consist of metallic particles; the remaining 95.7% contain the background, support, or carbon-coated copper net.
