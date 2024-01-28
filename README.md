@@ -55,7 +55,9 @@ The author acknowledges support from the state of Baden-Württemberg through bwH
 ## Performance comparing for different backbones
 [details are coming soon...]
 
-![Metric_Validation_Backbone_Variation](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/50a5fc54-1a59-4163-97ce-b7e88237f37f)
+![Metric_Validation_Backbone_Variation](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/0b545d27-17c5-4cf1-b731-7a5d5c711105)
+
+
 
 
 
