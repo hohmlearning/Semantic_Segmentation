@@ -64,4 +64,28 @@ The author acknowledges support from the state of Baden-Württemberg through bwH
 
 ## References
 
+[1] M. Casapu, A. Fischer, A.M. Gänzler, R. Popescu, M. Crone, D. Gerthsen, M. Türk, J.-D. Grunwaldt, Origin of the Normal and Inverse Hysteresis Behavior during CO Oxidation over Pt/Al2O3, ACS Catal. 7 (2017) 343–355
+[2] R. Smith, An Overview of the Tesseract OCR Engine 629–633
+[3] Samuel Hoffstaetter, Juarez Bochi, Matthias Lee, Ryan Mitchell, Emilio Cecchini, John Hagen, Darius Morawiec, Eddie Bedada, Uğurcan Akyüz, Pytesseract
+[4] A. Krizhevsky, I. Sutskever, G.E. Hinton, ImageNet classification with deep convolutional neural networks, Commun. ACM 60 (2017) 84–90
+[5] Y. LeCun, Y. Bengio, G. Hinton, Deep learning, Nature 521 (2015) 436–444
+[6] O. Ronneberger, P. Fischer, T. Brox, U-Net: Convolutional Networks for Biomedical Image Segmentation, arXiv, 2015
+[7] O. Ronneberger, P. Fischer, T. Brox, U-Net: Convolutional Networks for Biomedical Image Segmentation, arXiv, 2015
+[8] V. Dumoulin, F. Visin, A guide to convolution arithmetic for deep learning, arXiv, 2016
+[9] Vinod Nair, Geoffrey E. Hinton, Rectified linear units improve restricted boltzmann machines, in: Proceedings of the 27th International Conference on International Conference on Machine Learning, pp. 807–814
+[10] X. Glorot, A. Bordes, Y. Bengio, Deep Sparse Rectifier Neural Networks, in: G. Gordon, D. Dunson, M. Dudík (Eds.), Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics, PMLR, Fort Lauderdale, FL, USA, 2011, pp. 315–323
+[11] K. He, X. Zhang, S. Ren, J. Sun, Deep Residual Learning for Image Recognition, arXiv, 2015
+[12] K. Simonyan, A. Zisserman, Very Deep Convolutional Networks for Large-Scale Image Recognition, arXiv, 2014
+[13] C. Garbin, X. Zhu, O. Marques, Dropout vs. batch normalization: an empirical study of their impact to deep learning, Multimed Tools Appl 79 (2020) 12777–12815
+[14] J. Hu, L. Shen, S. Albanie, G. Sun, E. Wu, Squeeze-and-Excitation Networks, IEEE transactions on pattern analysis and machine intelligence 42 (2020) 2011–2023
+[15] I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016
+[16] J. Donahue, Y. Jia, O. Vinyals, J. Hoffman, N. Zhang, E. Tzeng, T. Darrell, DeCAF: A Deep Convolutional Activation Feature for Generic Visual Recognition
+[17] P. Yakubovskiy, Segmentation Models, GitHub repository (2019)
+[18] F. Chollet, others, Keras, 2015, https://github.com/fchollet/keras
+[19] O. Russakovsky, J. Deng, H. Su, J. Krause, S. Satheesh, S. Ma, Z. Huang, A. Karpathy, A. Khosla, M. Bernstein, A.C. Berg, L. Fei-Fei, ImageNet Large Scale Visual Recognition Challenge, Int J Comput Vis 115 (2015) 211–252
+[20] D. Chicco, G. Jurman, The advantages of the Matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation, BMC genomics 21 (2020) 6
+[21] G. Bebis, R. Boyle, B. Parvin, D. Koracin, F. Porikli, S. Skaff, A. Entezari, J. Min, D. Iwai, A. Sadagic, C. Scheidegger, T. Isenberg, Advances in Visual Computing 10072 (2016) 234–244
+[22] A. Buslaev, V.I. Iglovikov, E. Khvedchenya, A. Parinov, M. Druzhinin, A.A. Kalinin, Albumentations: Fast and Flexible Image Augmentations, Information 11 (2020) 125
+[23] S. Ruder, An overview of gradient descent optimization algorithms, 2016
+[24] M. Abadi, A. Agarwal, P. Barham, E. Brevdo, Z. Chen, C. Citro, G.S. Corrado, A. Davis, J. Dean, M. Devin, S. Ghemawat, I. Goodfellow, A. Harp, G. Irving, M. Isard, Y. Jia, R. Jozefowicz, L. Kaiser, M. Kudlur, J. Levenberg, D. Mane, R. Monga, S. Moore, D. Murray, C. Olah, M. Schuster, J. Shlens, B. Steiner, I. Sutskever, K. Talwar, P. Tucker, V. Vanhoucke, V. Vasudevan, F. Viegas, O. Vinyals, P. Warden, M. Wattenberg, M. Wicke, Y. Yu, X. Zheng, TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems
 
