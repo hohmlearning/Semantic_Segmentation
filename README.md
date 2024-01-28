@@ -1,2 +1,2 @@
-# Semantic Segmentation
-Segmentation on Catalysis with U-Net
+# Semantic Segmentation on Catalysis with U-Net
+
