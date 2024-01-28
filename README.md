@@ -53,6 +53,15 @@ The training and testing of the neural network were performed on the bwUniCluste
 The author acknowledges support from the state of Baden-Württemberg through bwHPC.
 
 ## Performance comparing for different backbones
+[details are coming soon...]
+
+## Performance comparing for different loss function
+[details are coming soon...]
+
+## Evaluating the Particle Size Distribution
+Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [25]. 
+[details are coming soon...]
+
 
 ## References
 
@@ -105,3 +114,4 @@ PMLR, Fort Lauderdale, FL, USA, 2011, pp. 315–323
 
 [24] M. Abadi, A. Agarwal, P. Barham, E. Brevdo, Z. Chen, C. Citro, G.S. Corrado, A. Davis, J. Dean, M. Devin, S. Ghemawat, I. Goodfellow, A. Harp, G. Irving, M. Isard, Y. Jia, R. Jozefowicz, L. Kaiser, M. Kudlur, J. Levenberg, D. Mane, R. Monga, S. Moore, D. Murray, C. Olah, M. Schuster, J. Shlens, B. Steiner, I. Sutskever, K. Talwar, P. Tucker, V. Vanhoucke, V. Vasudevan, F. Viegas, O. Vinyals, P. Warden, M. Wattenberg, M. Wicke, Y. Yu, X. Zheng, TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems
 
+[25] C.A. Schneider, W.S. Rasband, K.W. Eliceiri, NIH Image to ImageJ: 25 years of image analysis, Nature methods 9 (2012) 671–675
