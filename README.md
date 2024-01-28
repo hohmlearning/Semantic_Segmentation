@@ -55,6 +55,8 @@ The author acknowledges support from the state of Baden-Württemberg through bwH
 ## Performance comparing for different backbones
 [details are coming soon...]
 
+
+
 ## Performance comparing for different loss function
 [details are coming soon...]
 
@@ -64,6 +66,7 @@ Each binary image gained from the model is evaluated. First, the length and valu
 [details are coming soon...]
 
 
+![Metric_Validation_Backbone_Variation](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/fb0bf8a5-d619-4f07-b9d0-8ff6b51c88dd)
 
 ## References
 
