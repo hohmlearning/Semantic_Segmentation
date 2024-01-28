@@ -47,7 +47,14 @@ As highlighted by the creators of U-Net [[6](#references)], image augmentation i
 
 In contrast to non-adaptive optimizers, adaptive learning algorithms, such as ADAM, do not necessitate extensive hyperparameter tuning, albeit at a slight performance cost [[13](#references)]. To conserve the time required for tuning parameters in non-adaptive optimizers, the network in this study is optimized using Adaptive Moment Estimation (Adam), following the guidelines presented in [[23](#references)].
 
-
+## Exploration the training
+For the training and testing of the neural network, the modules Keras [[18](#references)] and Segmentation Model [[17](#references)] are used acting as an interface for the TensorFlow [[24](#references)] library. 
+The U-Net is trained with different backbones. 
+First, the weights from the ImageNet 2012 are frozen and only the encoder weights are fitted to the images. 
+After the error on training and validation plateaus, the decoder and encoder path are trained with a low learning rate for fine-tuning. 
+The models are evaluated with IoU and the confusion matrix.
+The training and testing of the neural network were performed on the bwUniCluster (2.0). 
+The author acknowledges support from the state of Baden-Württemberg through bwHPC.
 
 
 
