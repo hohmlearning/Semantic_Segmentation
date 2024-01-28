@@ -53,9 +53,17 @@ The training and testing of the neural network were performed on the bwUniCluste
 The author acknowledges support from the state of Baden-Württemberg through bwHPC.
 
 ## Performance comparing for different backbones
+Figure 1 presents a bar chart comparing the performance metrics of a baseline U-Net model against its variations featuring different backbone architectures on a validation dataset. 
 
 ![Metric_Validation_Backbone_Variation](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/91d1f6f8-5d0a-45a0-a8b1-869e06081216)
 Figure 1: Performance comparison on validation dataset for U-Net with different backbones.
+
+The baseline U-Net achieves an IoU of approximately 75% and a PPV of around 83.7%, with the NPV significantly higher at 99.4%. 
+Integrating advanced backbones with U-Net generally improves the IoU and PPV, indicating that these architectures might capture features more effectively for semantic segmentation in this specific validation context.
+The background performance corresponds to the Negative Predictive Value (NPV).
+The NPV is above 90 % for any model.
+The best result is obtained for U-Net + Resnet34 and U-Net + SE-Resnet34.
+The U-Net + SE-Resnet34 performs slightly better for the Positive Predictive Value (PPV).
 
 ## Performance comparing for different loss function
 
