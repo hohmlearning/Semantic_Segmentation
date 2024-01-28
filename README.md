@@ -55,26 +55,27 @@ The author acknowledges support from the state of Baden-Württemberg through bwH
 ## Performance comparing for different backbones
 
 ![Metric_Validation_Backbone_Variation](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/91d1f6f8-5d0a-45a0-a8b1-869e06081216)
+Figure 1: Performance comparison on validation dataset for U-Net with different backbones.
 
 ## Performance comparing for different loss function
 
-![Metric_Validation_Loss](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/96cac098-3f44-4d09-b40c-cdd9384ece0d)
 
+![Metric_Validation_Loss](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/96cac098-3f44-4d09-b40c-cdd9384ece0d)
+Figure 2: Performance comparison on validation dataset of different loss functions for U-Net with SE-Resnet34.
 
 ## Performance on test dataset
 
 ![Metric_Test_Full_Trainin](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/99367f5f-2f88-4788-8513-07dcb88917a3)
-
+Figure 3: Performance on test dataset for U-Net with SE-Resnet34.
 
 
 
 ## Evaluating the Particle Size Distribution
 Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [[25](#references)]. 
 
-[details are coming soon...]
 
-
-
+![SE-Resnet34_Manuell_auto](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/d8438412-f98c-4d2c-829d-2e8ea72bf6e0)
+Figure 4: Comparison of manual and automated analysis for characteristic diameters of the PSD.
 
 ## References
 
