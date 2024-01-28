@@ -94,7 +94,9 @@ This is important because the dataset is unbalanced.
 Training on the training and validation dataset increases the PPV. 
 Likely, the model's performance would further increase with more data.
 The IoU slightly decreases for the test dataset.
-
+The model is getting better at predicting the correct class for the positives (true positives are increasing relative to false positives), hence the increase in PPV.
+However, the False Negatives are increasing slightly. 
+This leads to a small decrease of the NPV, but a stronger decrease of IoU due to the inbalanceness of the data.
 
 
 ## Evaluating the Particle Size Distribution
