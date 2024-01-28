@@ -53,15 +53,18 @@ The training and testing of the neural network were performed on the bwUniCluste
 The author acknowledges support from the state of Baden-Württemberg through bwHPC.
 
 ## Performance comparing for different backbones
-[details are coming soon...]
-
-
 
 ![Metric_Validation_Backbone_Variation](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/91d1f6f8-5d0a-45a0-a8b1-869e06081216)
 
 ## Performance comparing for different loss function
-[details are coming soon...]
+
 ![Metric_Validation_Loss](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/96cac098-3f44-4d09-b40c-cdd9384ece0d)
+
+
+## Performance on test dataset
+
+![Metric_Test_Full_Trainin](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/99367f5f-2f88-4788-8513-07dcb88917a3)
+
 
 
 
