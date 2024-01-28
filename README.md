@@ -83,9 +83,17 @@ Overall, the more complicated balanced surface loss does not outperform the simp
 
 
 ## Performance on test dataset
+The U-Net + Se-Resnet34 is trained on the training and validation dataset.
+The true performance of this model is approximated on the test dataset in Figure 3.
 
 ![Metric_Test_Full_Trainin](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/99367f5f-2f88-4788-8513-07dcb88917a3)
 Figure 3: Performance on test dataset for U-Net with SE-Resnet34.
+
+Importantly, the NPV remains above 99 %. 
+This is important because the dataset is unbalanced. 
+Training on the training and validation dataset increases the PPV. 
+Likely, the model's performance would further increase with more data.
+The IoU slightly decreases for the test dataset.
 
 
 
