@@ -55,10 +55,12 @@ The author acknowledges support from the state of Baden-Württemberg through bwH
 ## Performance comparing for different backbones
 [details are coming soon...]
 
-![Metric_Validation_Backbone_Variation](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/0b545d27-17c5-4cf1-b731-7a5d5c711105)
 
 
 
+
+
+![Uploading Metric_Validation_Backbone_Variation.png…]()
 
 
 ## Performance comparing for different loss function
