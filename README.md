@@ -58,15 +58,4 @@ The author acknowledges support from the state of Baden-Württemberg through bwH
 
 ## References
 
-[1] M. Casapu, A. Fischer, A.M. Gänzler, R. Popescu, M. Crone, D. Gerthsen, M. Türk, J.-D. Grunwaldt, Origin of the Normal and Inverse Hysteresis Behavior during CO Oxidation over Pt/Al2O3, ACS Catal. 7 (2017) 343–355
-[2] R. Smith, An Overview of the Tesseract OCR Engine 629–633
-[3] Samuel Hoffstaetter, Juarez Bochi, Matthias Lee, Ryan Mitchell, Emilio Cecchini, John Hagen, Darius Morawiec, Eddie Bedada, Uğurcan Akyüz, Pytesseract
-[4] A. Krizhevsky, I. Sutskever, G.E. Hinton, ImageNet classification with deep convolutional neural networks, Commun. ACM 60 (2017) 84–90
-[5] Y. LeCun, Y. Bengio, G. Hinton, Deep learning, Nature 521 (2015) 436–444
-[6] O. Ronneberger, P. Fischer, T. Brox, U-Net: Convolutional Networks for Biomedical Image Segmentation, arXiv, 2015
-[7] O. Ronneberger, P. Fischer, T. Brox, U-Net: Convolutional Networks for Biomedical Image Segmentation, arXiv, 2015
-[8] V. Dumoulin, F. Visin, A guide to convolution arithmetic for deep learning, arXiv, 2016
-[9] Vinod Nair, Geoffrey E. Hinton, Rectified linear units improve restricted boltzmann machines, in: Proceedings of the 27th International Conference on International Conference on Machine Learning, pp. 807–814
-[10] X. Glorot, A. Bordes, Y. Bengio, Deep Sparse Rectifier
-
 
