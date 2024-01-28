@@ -1,5 +1,12 @@
 # Enhancing Catalyst Analysis through Advanced Image Processing: Semantic Segmentation of Metallic Nanoparticles in TEM Imaging
 
+##Abstract
+
+This study enhances catalyst analysis by applying advanced image processing to the semantic segmentation of metallic nanoparticles in Transmission Electron Microscopy (TEM) imaging. 
+Utilizing U-Net architecture with different Convolution Neural Networks (CNN) as the encoder, this research accurately segments TEM images for Particle Size Distribution (PSD) analysis of catalysts synthesized via Supercritical Fluid Reaction Deposition (SFRD). The methodology addresses the limited and imbalanced data challenges, employing transfer learning and adaptive optimization. 
+Evaluation against manual annotations shows the model's effectiveness in improving accuracy and reducing manual analysis in catalyst characterization. 
+This approach holds significant potential in material science and process engineering.
+
 ## Introduction
 
 Catalysts, enhancing efficiency and selectivity in chemical reactions, often consist of a metal that acts as the active site for the reaction and a support material that increases the surface area and stability of the metal particles. 
