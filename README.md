@@ -117,13 +117,24 @@ Figure 4: Example image as well as binary ground truth and prediction.
 
 The Prediction image closely resembles the Ground Truth, indicating that the model has performed well in identifying the RoI — the nanoparticles.
 The overall shapes and distributions of the particles are well-matched, but the exact boundaries of some particles show variation. 
-Note that boundary RoIs, touching the image's borders, are not considered in the final evaluation.
+The final evaluation does not consider boundary RoIs touching the image's borders.
+Figure 5 depicts the raw image and the prediction.
+
+![grafik](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/80c16232-8619-4e14-9df5-f040a586ee03)
+Figure 5: Example image (left), the binary prediction (middle), and the image with prediction in blue (right).
+
+The overlay shows that most of the predicted nanoparticles (blue) are well-aligned with the bright spots in the TEM image, confirming the model's effectiveness.
+The prediction does not appear to include false positives or negatives, indicating high precision and recall.
+The model handles varying particle sizes well, as the blue overlays cover small and large particles.
+The fidelity of the boundaries of the predicted areas to the actual particles suggests that the model has effectively learned the shape and size characteristics of the nanoparticles.
+The segmentation model has a high predictive performance, accurately mapping the locations and sizes of nanoparticles in the TEM image. 
+This capability could significantly streamline the process of PSD analysis by providing rapid and reliable particle identification without the need for manual annotation.
 
 ## Evaluating the Particle Size Distribution
-Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [[25](#references)], as shown in Figure 5. 
+Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [[25](#references)], as shown in Figure 6. 
 
 ![SE-Resnet34_Manuell_auto](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/c1d5317c-a99e-40d5-8b34-cd9c9e68d5c9)
-Figure 5: Comparison of manual and automated analysis for characteristic diameters of the PSD.
+Figure 6: Comparison of manual and automated analysis for characteristic diameters of the PSD.
 
 The points are close to the diagonal line, indicating a good agreement between the automated and manual methods across the measured sizes.
 The d_50 values (red circles) are very close to the line, suggesting that the median diameter obtained by the automated method closely matches the manual analysis.
