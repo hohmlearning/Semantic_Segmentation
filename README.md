@@ -110,12 +110,20 @@ The model is getting better at predicting the correct class for the positives (t
 However, the False Negatives are increasing slightly. 
 This leads to a small decrease of the NPV, but a stronger decrease of IoU due to the inbalanceness of the data.
 
+In Figure 4, an example testing image (left) with the corresponding ground truth (middle), and prediction (right) is shown.
+
+![grafik](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/9e37111f-cfeb-4f54-adb4-d75db1577813)
+Figure 4: Example image as well as binary ground truth and prediction.
+
+The Prediction image closely resembles the Ground Truth, indicating that the model has performed well in identifying the RoI — the nanoparticles.
+The overall shapes and distributions of the particles are well-matched, but the exact boundaries of some particles show variation. 
+Note that boundary RoIs, touching the image's borders, are not considered in the final evaluation.
 
 ## Evaluating the Particle Size Distribution
-Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [[25](#references)], as shown in Figure 4. 
+Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [[25](#references)], as shown in Figure 5. 
 
 ![SE-Resnet34_Manuell_auto](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/c1d5317c-a99e-40d5-8b34-cd9c9e68d5c9)
-Figure 4: Comparison of manual and automated analysis for characteristic diameters of the PSD.
+Figure 5: Comparison of manual and automated analysis for characteristic diameters of the PSD.
 
 The points are close to the diagonal line, indicating a good agreement between the automated and manual methods across the measured sizes.
 The d_50 values (red circles) are very close to the line, suggesting that the median diameter obtained by the automated method closely matches the manual analysis.
