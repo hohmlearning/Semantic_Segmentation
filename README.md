@@ -112,10 +112,16 @@ This leads to a small decrease of the NPV, but a stronger decrease of IoU due to
 
 
 ## Evaluating the Particle Size Distribution
-Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [[25](#references)]. 
+Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [[25](#references)] in figure 4. 
 
 ![SE-Resnet34_Manuell_auto](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/c1d5317c-a99e-40d5-8b34-cd9c9e68d5c9)
 Figure 4: Comparison of manual and automated analysis for characteristic diameters of the PSD.
+
+The points are close to the diagonal line, indicating a good agreement between the automated and manual methods across the measured sizes.
+The d_50 values (red circles) are very close to the line, suggesting that the median diameter obtained by the automated method closely matches the manual analysis.
+The d_10 and d_90​ values (black squares and blue triangles, respectively) also lie close to the line but show a slight deviation, especially in smaller sizes. 
+The consistency across the range suggests that the automated method is reliable for estimating the PSD of the particles for this distribution.
+Overall, the U-Net, especially with SE-Resnet34, is capable of replicating manual analysis across a wide range of particle sizes.
 
 ## References
 
