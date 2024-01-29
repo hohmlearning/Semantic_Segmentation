@@ -38,7 +38,7 @@ In particular, a SE-Resnet34 is deployed as an encoder.
 The total amount of data consists of 72 annotated images. After the convergence of the network, the performance is tested on 5 reserved images. The residual 67 images are used for training and validation. The data is imagewise independent. In addition, it was assumed that the distribution of information was identical across all images. Therefore, a split is performed for training and validation, categorizing 70% and 30% of the 67 images for training and validation, respectively. 
 In addition to the limited amount of data, the data is negatively imbalanced. About 4.3% of the training and validation data pixels consist of metallic particles; the remaining 95.7% contain the background, support, or carbon-coated copper net.
 
-## Unveiling the Foundations of Model Training: Strategies and Theories in Transfer Learning
+## Model Training Foundations: Transfer Learning Strategies
 
 In transfer learning, the network is initially trained on a large dataset and then applied to a similar problem with less data [[15](#references)]. This approach is advantageous when the features learned from the large dataset can effectively represent the data in the new, smaller dataset [[15](#references)]. Particularly in cases with limited data, where training a network from scratch could lead to overfitting, transfer learning leverages generalized features from the larger dataset to solve similar problems [[16](#references)].
 In this study, various encoder weights, previously trained on the ImageNet 2012 dataset [[19](#references)], are employed. The ImageNet 2012 dataset is extensive, containing 1.2 million images across 1000 different classes [[19](#references)]. These pretrained weights are sourced from [[17](#references),[18](#references)].
@@ -95,7 +95,7 @@ Overall, the more complicated balanced surface loss does not outperform the simp
 
 
 ## Performance on test dataset
-The U-Net + Se-Resnet34 is trained on the training and validation dataset.
+The U-Net + SE-Resnet34 is trained on the training and validation dataset.
 The true performance of this model is approximated on the test dataset in Figure 3.
 
 ![Metric_Test_Full_Trainin](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/99367f5f-2f88-4788-8513-07dcb88917a3)
@@ -112,7 +112,7 @@ This leads to a small decrease of the NPV, but a stronger decrease of IoU due to
 
 
 ## Evaluating the Particle Size Distribution
-Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [[25](#references)] in Figure 4. 
+Each binary image gained from the model is evaluated. First, the length and value of the HAADF image’s scale are read to determine the length-to-pixel ratio. The information about the area and size of the nanoparticles touching the borders is incomplete. Therefore, the RoIs touching the borders are not evaluated. Surface tension leads to a minimization of the surface. Therefore, holes in the RoI are assumed to be a consequence of minor imperfection of the model’s prediction. Eventually, holes in RoI are filled, meaning the pixel values are equal to the metallic nanoparticles. Finally, the equivalent spherical diameter of the RoIs is determined, and the number PSD of the equivalent spherical diameter is examined. For further evaluation of the model, the outcome of the model’s prediction, followed by automated evaluation of the equivalent spherical diameter, is compared with the manual annotation and evaluation, both using ImageJ software [[25](#references)], as shown in Figure 4. 
 
 ![SE-Resnet34_Manuell_auto](https://github.com/hohmlearning/Semantic_Segmentation/assets/107933496/c1d5317c-a99e-40d5-8b34-cd9c9e68d5c9)
 Figure 4: Comparison of manual and automated analysis for characteristic diameters of the PSD.
@@ -122,6 +122,10 @@ The d_50 values (red circles) are very close to the line, suggesting that the me
 The d_10 and d_90​ values (black squares and blue triangles, respectively) also lie close to the line but show a slight deviation, especially in smaller sizes. 
 The consistency across the range suggests that the automated method is reliable for estimating the PSD of the particles for this distribution.
 Overall, the U-Net, especially with SE-Resnet34, is capable of replicating manual analysis across a wide range of particle sizes.
+
+## Summary
+The study advances catalyst analysis by applying semantic segmentation to TEM images using a U-Net architecture with SE-ResNet34 encoder, addressing the challenges of limited and imbalanced data. 
+The method shows the potential of deep learning for broader application in material science and process engineering.
 
 ## References
 
