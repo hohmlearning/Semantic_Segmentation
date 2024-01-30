@@ -148,7 +148,7 @@ The method shows the potential of deep learning for broader application in mater
 The training and testing of the neural network were performed on the bwUniCluster (2.0). 
 The author acknowledges support from the state of Baden-Württemberg through bwHPC.
 Furthermore, the author is very grateful for the open-source community on computer vision and deep learning.
-The [YouTube channel](https://www.google.com](https://www.youtube.com/c/DigitalSreeni)  of Dr. Sreenivas Bhattiprolu has made significant contributions to this research.
+The [YouTube channel](https://www.youtube.com/c/DigitalSreeni) of Dr. Sreenivas Bhattiprolu has made significant contributions to this research.
 
 
 ## References
