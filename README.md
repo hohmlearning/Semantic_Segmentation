@@ -56,8 +56,6 @@ The U-Net is trained with different backbones.
 First, the weights from the ImageNet 2012 are frozen and only the encoder weights are fitted to the images. 
 After the error on training and validation plateaus, the decoder and encoder path are trained with a low learning rate for fine-tuning. 
 The models are evaluated with IoU and the confusion matrix.
-The training and testing of the neural network were performed on the bwUniCluster (2.0). 
-The author acknowledges support from the state of Baden-Württemberg through bwHPC.
 
 ## Comparing Performance Across Different Backbones
 Figure 1 presents a bar chart comparing the performance metrics of a baseline U-Net model against its variations featuring different backbone architectures on a validation dataset. 
@@ -145,6 +143,13 @@ Overall, the U-Net, especially with SE-Resnet34, is capable of replicating manua
 ## Summary
 The study advances catalyst analysis by applying semantic segmentation to TEM images using a U-Net architecture with SE-ResNet34 encoder, addressing the challenges of limited and imbalanced data. 
 The method shows the potential of deep learning for broader application in material science and process engineering.
+
+## Acknowledgement 
+The training and testing of the neural network were performed on the bwUniCluster (2.0). 
+The author acknowledges support from the state of Baden-Württemberg through bwHPC.
+Furthermore, the author is very grateful for the open-source community on computer vision and deep learning.
+The [YouTube channel]([https://www.google.com](https://www.youtube.com/c/DigitalSreeni))  of Dr. Sreenivas Bhattiprolu has made significant contributions to this research.
+
 
 ## References
 
